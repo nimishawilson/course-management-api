@@ -1,0 +1,35 @@
+
+### Add users
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+  "registrationNo": "880789",
+  "firstName": "Emy",
+  "lastName": "Johnson",
+  "course": "Business Administration",
+  "role": "student"
+}
+
+### Edit users
+PUT http://localhost:3000/users/1
+content-type: application/json
+
+{
+  "registrationNo": "880789",
+  "firstName": "Emy 1",
+  "lastName": "Johnson",
+  "course": "Business Administration",
+  "role": "student"
+  
+}
+
+### Get All users
+GET http://localhost:3000/users
+
+
+### Get user by id
+GET http://localhost:3000/users/2
+
+### Delete user by id
+Delete http://localhost:3000/users/2
